@@ -134,7 +134,7 @@ export const countCharacters = (text: string): { total: number; noSpaces: number
 
 // Markdown to HTML
 export const markdownToHtml = (markdown: string): string => {
-  let html = markdown
+  const html = markdown
     // Headers
     .replace(/^### (.*?)$/gm, '<h3>$1</h3>')
     .replace(/^## (.*?)$/gm, '<h2>$1</h2>')
